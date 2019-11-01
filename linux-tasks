@@ -1,0 +1,237 @@
+Task 1 : Basic Task
+
+Open a linux terminal. Now do the following from the command line.
+
+1. 
+recruit@recruit-Mecer-X102:~$ ls
+ Desktop                                  myProject            summary.txt
+ Documents                                node_modules         Templates
+ Downloads                                Personal-Website     umuzi.txt
+ excercise.txt                            Pictures             Videos
+ google-chrome-stable_current_amd64.deb   
+ Music                                    search_results.txt
+ myDoccument                              search_result.txt
+
+ls function list all the directories and files in a working directory.
+
+2. recruit@recruit-Mecer-X102:~$ pwd
+/home/recruit
+
+pwd means print working directory, it prints the path of the working directory
+
+3. recruit@recruit-Mecer-X102:~$ mkdir workspace
+
+4. recruit@recruit-Mecer-X102:~$ cd workspace
+recruit@recruit-Mecer-X102:~/workspace$ ls
+recruit@recruit-Mecer-X102:~$
+
+This means there is no file or subdirectory in the workspace directory hence nothing was returned.
+
+5. recruit@recruit-Mecer-X102:~/workspace$ touch README.md
+
+6. recruit@recruit-Mecer-X102:~/workspace$ README.md CHANGELOG.md
+
+
+
+
+ Task 2 : Absolute and Relative Paths
+
+recruit@recruit-Mecer-X102:~/workspace$ touch exercise.md
+recruit@recruit-Mecer-X102:~/workspace$ mv exercise.md /tmp
+recruit@recruit-Mecer-X102:~/workspace$ rm /home/recruit/workspace/exercise.md
+
+
+Task 3 : cat commands
+1. recruit@recruit-Mecer-X102:~$ touch umuzi.md cohort.md recruit.md
+2. recruit@recruit-Mecer-X102:~/cat_commands$ cat>umuzi.md
+Umuzi works with leading employers to equip talented young people with the scarce digital skills they need to access high-value careers and thrive in the fourth industrial revolution.^Z
+[2]+  Stopped                 cat > umuzi.md
+recruit@recruit-Mecer-X102:~/cat_commands$ cat>cohort.md
+Sonnet 116: Let me not to the marriage of true minds 
+BY WILLIAM SHAKESPEARE
+Let me not to the marriage of true minds 
+Admit impediments. Love is not love 
+Which alters when it alteration finds, 
+Or bends with the remover to remove. 
+O no! it is an ever-fixed mark 
+That looks on tempests and is never shaken; 
+It is the star to every wand'ring bark, 
+Whose worth's unknown, although his height be taken. 
+Love's not Time's fool, though rosy lips and cheeks 
+Within his bending sickle's compass come; 
+Love alters not with his brief hours and weeks, 
+But bears it out even to the edge of doom. 
+If this be error and upon me prov'd, 
+I never writ, nor no man ever lov'd.^Z
+[3]+  Stopped                 cat > cohort.md
+recruit@recruit-Mecer-X102:~/cat_commands$ cat>recruit.md
+Invictus 
+BY WILLIAM ERNEST HENLEY
+Out of the night that covers me, 
+      Black as the pit from pole to pole, 
+I thank whatever gods may be 
+      For my unconquerable soul. 
+
+In the fell clutch of circumstance 
+      I have not winced nor cried aloud. 
+Under the bludgeonings of chance 
+      My head is bloody, but unbowed. 
+
+Beyond this place of wrath and tears 
+      Looms but the Horror of the shade, 
+And yet the menace of the years 
+      Finds and shall find me unafraid. 
+
+It matters not how strait the gate, 
+      How charged with punishments the scroll, 
+I am the master of my fate, 
+      I am the captain of my soul. 
+
+^Z
+[4]+  Stopped                 cat > recruit.md
+
+3. recruit@recruit-Mecer-X102:~/cat_commands$ cat umuzi.md cohort.md recruit.md
+Umuzi works with leading employers to equip talented young people with the scarce digital skills they need to access high-value careers and thrive in the fourth industrial revolution.
+Sonnet 116: Let me not to the marriage of true minds 
+BY WILLIAM SHAKESPEARE
+Let me not to the marriage of true minds 
+Admit impediments. Love is not love 
+Which alters when it alteration finds, 
+Or bends with the remover to remove. 
+O no! it is an ever-fixed mark 
+That looks on tempests and is never shaken; 
+It is the star to every wand'ring bark, 
+Whose worth's unknown, although his height be taken. 
+Love's not Time's fool, though rosy lips and cheeks 
+Within his bending sickle's compass come; 
+Love alters not with his brief hours and weeks, 
+But bears it out even to the edge of doom. 
+If this be error and upon me prov'd, 
+Invictus 
+BY WILLIAM ERNEST HENLEY
+Out of the night that covers me, 
+      Black as the pit from pole to pole, 
+I thank whatever gods may be 
+      For my unconquerable soul. 
+
+In the fell clutch of circumstance 
+      I have not winced nor cried aloud. 
+Under the bludgeonings of chance 
+      My head is bloody, but unbowed. 
+
+Beyond this place of wrath and tears 
+      Looms but the Horror of the shade, 
+And yet the menace of the years 
+      Finds and shall find me unafraid. 
+
+It matters not how strait the gate, 
+      How charged with punishments the scroll, 
+I am the master of my fate, 
+      I am the captain of my soul. 
+
+5. recruit@recruit-Mecer-X102:~/cat_commands$ echo "The End" >> summary.md
+recruit@recruit-Mecer-X102:~/cat_commands$ cat summary.md
+Sonnet 116: Let me not to the marriage of true minds 
+BY WILLIAM SHAKESPEARE
+Let me not to the marriage of true minds 
+Admit impediments. Love is not love 
+Which alters when it alteration finds, 
+Or bends with the remover to remove. 
+O no! it is an ever-fixed mark 
+That looks on tempests and is never shaken; 
+It is the star to every wand'ring bark, 
+Whose worth's unknown, although his height be taken. 
+Love's not Time's fool, though rosy lips and cheeks 
+Within his bending sickle's compass come; 
+Love alters not with his brief hours and weeks, 
+But bears it out even to the edge of doom. 
+If this be error and upon me prov'd, 
+Umuzi works with leading employers to equip talented young people with the scarce digital skills they need to access high-value careers and thrive in the fourth industrial revolution.
+Invictus 
+BY WILLIAM ERNEST HENLEY
+Out of the night that covers me, 
+      Black as the pit from pole to pole, 
+I thank whatever gods may be 
+      For my unconquerable soul. 
+
+In the fell clutch of circumstance 
+      I have not winced nor cried aloud. 
+Under the bludgeonings of chance 
+      My head is bloody, but unbowed. 
+
+Beyond this place of wrath and tears 
+      Looms but the Horror of the shade, 
+And yet the menace of the years 
+      Finds and shall find me unafraid. 
+
+It matters not how strait the gate, 
+      How charged with punishments the scroll, 
+I am the master of my fate, 
+      I am the captain of my soul. 
+
+The End
+
+Task 4 : The locate command
+
+1. recruit@recruit-Mecer-X102:~/cat_commands$ locate umuzi
+/home/recruit/umuzi.txt
+/home/recruit/Pictures/Me at umuzi.jpg
+
+2.recruit@recruit-Mecer-X102:~/cat_commands$ locate umuzi>saerch_results.md
+recruit@recruit-Mecer-X102:~/cat_commands$ cat saerch_results.md/home/recruit/umuzi.txt
+/home/recruit/Pictures/Me at umuzi.jpg
+
+Task 5
+
+1.recruit@recruit-Mecer-X102:~$ cd Documents
+recruit@recruit-Mecer-X102:~/Documents$ touch pad.md
+2.recruit@recruit-Mecer-X102:~/Documents$ cd ../Desktop
+recruit@recruit-Mecer-X102:~/Desktop$ mkdir work
+3.recruit@recruit-Mecer-X102:~/Documents$ cp Pad.md /home/recruit/Desktop/work>Pad_copy.md
+ecruit@recruit-Mecer-X102:~/Documents$ mv Pad_copy.md /home/recruit/Desktop/work
+4.recruit@recruit-Mecer-X102:~/Desktop/work$ locate updatedb
+/etc/updatedb.conf
+/etc/alternatives/updatedb
+/etc/alternatives/updatedb.8.gz
+/usr/bin/updatedb
+/usr/bin/updatedb.mlocate
+/usr/share/man/man5/updatedb.conf.5.gz
+/usr/share/man/man8/updatedb.8.gz
+/usr/share/man/man8/updatedb.mlocate.8.gz
+/var/lib/flatpak/runtime/org.freedesktop.Sdk/x86_64/18.08/4da83360b21869be6d0f921baa96eeba16fb6be24beb36925b5ac7dc5e667621/files/bin/updatedb
+5. recruit@recruit-Mecer-X102:~/Desktop/work$ cd -
+/home/recruit/Documents
+recruit@recruit-Mecer-X102:~/Documents$ 
+6. recruit@recruit-Mecer-X102:~/Documents$ locate Pad_copy.md
+recruit@recruit-Mecer-X102:~/Documents$ locate pad_copy.md
+
+
+Task 6
+1. recruit@recruit-Mecer-X102:/$ find . -type f -iname '*.pdf'
+2. recruit@recruit-Mecer-X102:/$ find . -type f -iname '*.pdf'> Desktop
+bash: Desktop: Permission denied
+recruit@recruit-Mecer-X102:/$ find . -type f -iname '*.pdf'>Documents
+bash: Documents: Permission denied
+3. recruit@recruit-Mecer-X102:/$ find . -type f -newermt 2019-10-29
+
+Task 7
+
+1. recruit@recruit-Mecer-X102:/$ nano my_bio.md
+2. recruit@recruit-Mecer-X102:~$ mkdir my_files
+recruit@recruit-Mecer-X102:~$ mv my_bio.md my_files
+recruit@recruit-Mecer-X102:~$ cd my_files
+recruit@recruit-Mecer-X102:~/my_files$ ls
+my_bio.md
+
+
+
+
+
+
+
+    
+
+
+
+
+
